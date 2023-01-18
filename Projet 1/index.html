@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<title>Webagency</title>
+</head>
+<body>
+
+<!-- En tête contenant le logo et le menu en version mobile et normale -->
+<header id="header">
+
+	<!-- Div contenant le logo -->
+	<div title="logo" id="logo">
+		<a href="" target="blank">
+			<img src="webagency_images/images/logo.png" alt="logo">
+		</a>
+	</div>
+
+	<!-- Menu de navigation mobile -->
+	<nav id="nav_mobile">
+	  <div id="menuToggle">
+	    <input type="checkbox" />
+	    <i class="fa-solid fa-bars" id="icon_bars"></i>
+	    <i class="fa-solid fa-xmark" id="icon_cross"></i> 
+	    <ul id="menu_mobile">
+	      <li><a href="#">Acceuil</a></li> 
+	      <li><a href="#services">Services</a></li> 
+	      <li><a href="#ancre_portfolio">Portfolio</a></li>
+	      <li><a href="#Contact">Contact</a></li>
+	    </ul>
+	  </div>
+	</nav>
+
+	<!-- Menu de navigation normal -->
+	<div id="desktop_menu_container">
+		<a href="#" class="desktop_menu_items">Acceuil</a>
+		<a href="#services" class="desktop_menu_items">Services</a>
+		<a href="#ancre_portfolio" class="desktop_menu_items">Portfolio</a>
+		<a href="#Contact" class="desktop_menu_items">Contacts</a>
+
+	</div>
+</header>
+
+<!-- Section du carroussel -->
+<section title="carroussel" id="carroussel">
+	<!-- Div contenant le carroussel -->
+	<div id="big_slider_container">
+	 	<div id="little_slider_container">
+				<img src="webagency_images/images/slider/bg1.jpg" alt="image du slider" id="image_1_slider">
+				<img src="webagency_images/images/slider/bg2.jpg" alt="image du slider" id="image_2_slider">
+				<form> 
+					<button formaction="#image_2_slider" id="buttonl1" class="button">
+					 	<i class="fa-solid fa-chevron-left"></i>
+					</button> </form>
+				<form> 
+					<button formaction="#image_2_slider" id="buttonr1" class="button">
+						<i class="fa-solid fa-chevron-right"></i>
+					</button> </form>
+				<form> 
+					<button formaction="#image_1_slider" id="buttonl2" class="button"> 
+						<i class="fa-solid fa-chevron-left"> </i>
+					</button> </form>
+				<form> 
+					<button formaction="#image_1_slider" id="buttonr2" class="button"> 
+						<i class="fa-solid fa-chevron-right"> </i>
+					</button> </form> 
+		</div>
+		<div class="texte_slider" id="texte_slider2">
+							  <p class="titre_slider"> <strong>WEBAGENCY </strong>: L'AGENCE DE TOUS <br> VOS PROJETS!</p>
+							  <p class="description_slider">Vous avez un projet web ? La Webagency vous aide à le réaliser</p>
+							  <button type="button">Plus d'infos</button>
+		</div>			
+	</div>
+
+	<!-- Div contenant le texte de description du carroussel en version mobile -->
+	<div id="texte_slider_mobile">
+			<p> <strong>WEBAGENCY </strong>: <br> L'AGENCE DE TOUS <br> VOS PROJETS!</p>
+			<p>Vous avez un projet web ? La Webagency vous aide à le réaliser</p>
+			<button type="button">Plus d'infos</button>
+	</div>
+</section>
+
+<!-- Section des services -->
+<section title="Nos Services" id="services">
+	<h1 id="titre_services">NOS SERVICES</h1>
+	<div class="soulignage">
+		<span class="container_cercle_soulignage"><i class="fa-solid fa-circle" id="cercle_soulignage"></i></span>
+	</div> 
+	<p id="sous_titre_services">Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+ 	<div class="liste_services">
+					<div id="image_liste_services"><img src="webagency_images/images/main-feature.png" alt="site web " class="main_img"></div>
+					<div class="colonne">
+						<ul class="fa-ul">
+							<li id="ux_design" class="texte_description_service1">
+								
+								<span class="fa-li"><i class="fa-solid fa-arrow-trend-up"><i class="fa-solid fa-circle" id="cercle1"></i></i></span> 
+								<p><strong class="titre_description_service">UX DESIGN</strong> <br> Nos Ux designers travaillent avec vous pour créer une expérience utilisateur prémium</p>
+							</li>
+							<li class="texte_description_service1"> <span class="fa-li"><i class="fa-solid fa-cubes"><i class="fa-solid fa-circle" id="cercle2"></i></i></span> 
+								<p><strong class="titre_description_service">UI DESIGN</strong> <br> En concordance avec l'Ux design, nous vous proposons aussi des solutions d'organisation graphiques et textuelles pour faciliter la vie de vos clients</p>
+							</li>
+							<li class="texte_description_service1"> <span class="fa-li"><i class="fa-solid fa-chart-pie"><i class="fa-solid fa-circle" id="cercle3"></i></i></span> 
+								<p><strong class="titre_description_service">SEO</strong> <br>Nous travaillions sur le référencement de votre site web avec les dernières technologies afin de vous donner un avantage compétitif certain.</p>
+							</li>
+						</ul>
+					</div>
+	</div> 
+</section> 
+
+<!-- Section du portfolio -->
+<section id="ancre_portfolio">
+	<h1 id="titre_projet">NOS PROJETS</h1>
+	<div class="soulignage">
+		<span class="container_cercle_soulignage"><i class="fa-solid fa-circle" id="cercle_soulignage2"></i></span>
+	</div> 
+	<p id="resume_projet">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
+	<div id="menu_projet">
+		<div class="link_container">
+			<a href="" class="bouton_menu_projet" id="all_works">ALL WORKS</a>
+			<div class="arrow"></div>
+		</div>
+		<div class="link_container">			
+			<a href="" class="bouton_menu_projet" target="iframe_1">CREATIVE</a>
+			<div class="arrow"></div>
+		</div>
+		<div class="link_container">			
+			<a href="" class="bouton_menu_projet" target="iframe_1">CORPORATE</a>
+			<div class="arrow"></div>
+		</div>
+		<div class="link_container">			
+			<a href="" class="bouton_menu_projet" id="portfolio">PORTFOLIO</a>
+			<div class="arrow"></div>
+		</div>
+	</div>
+		<!-- LES PROJETS EN EUX MËMES -->
+	<nav id="nav_mobile1">
+	  <div id="menuToggle1">
+	    <input type="checkbox" />
+	    <i class="fa-solid fa-bars" id="icon_bars1"></i>
+	    <i class="fa-solid fa-xmark" id="icon_cross1"></i> 
+	    <ul id="menu_mobile1">
+	      <li><a href="#">ALL WORKS</a></li> 
+	      <li><a href="#">CREATIVE</a></li> 
+	      <li><a href="#">CORPORATE</a></li>
+	      <li><a href="#">PORTFOLIO</a></li>
+	    </ul>
+	  </div>
+	</nav>
+	<div id="container_des_projets">
+
+		<div class="sample_projet creative_projet">
+			<img src="webagency_images/images/portfolio/01.jpg" class="image_projet" alt="image">
+			<i class="fa-solid fa-eye"></i>
+			<div class="description_image_projet">
+				<h6>Item numéro 1</h6>
+				<p>Description</p>
+			</div>
+		</div>
+		<div class="sample_projet creative_projet">
+			<img src="webagency_images/images/portfolio/02.jpg" class="image_projet" alt="image">
+			<i class="fa-solid fa-eye"></i>
+			<div class="description_image_projet">
+				<h6>Item numéro 2</h6>
+				<p>Description</p>
+			</div>
+		</div>
+		<div class="sample_projet creative_projet">
+			<img src="webagency_images/images/portfolio/03.jpg" class="image_projet" alt="image">
+			<i class="fa-solid fa-eye"></i>
+			<div class="description_image_projet">
+				<h6>Item numéro 3</h6>
+				<p>Description</p>
+			</div>
+		</div>
+		<div class="sample_projet creative_projet">
+			<img src="webagency_images/images/portfolio/04.jpg" class="image_projet" alt="image">
+			<i class="fa-solid fa-eye"></i>
+			<div class="description_image_projet">
+				<h6>Item numéro 4</h6>
+				<p>Description</p>
+			</div>
+		</div>
+		<div class="sample_projet creative_projet">
+			<img src="webagency_images/images/portfolio/05.jpg" class="image_projet" alt="image">
+			<i class="fa-solid fa-eye"></i>
+			<div class="description_image_projet">
+				<h6>Item numéro 5</h6>
+				<p>Description</p>
+			</div>
+		</div>
+		<div class="sample_projet creative_projet">
+			<img src="webagency_images/images/portfolio/06.jpg" class="image_projet" alt="image">
+			<i class="fa-solid fa-eye"></i>
+			<div class="description_image_projet">
+				<h6>Item numéro 6</h6>
+				<p>Description</p>
+			</div>
+		</div>
+		<div class="sample_projet creative_projet">
+			<img src="webagency_images/images/portfolio/07.jpg" class="image_projet" alt="image">
+			<i class="fa-solid fa-eye"></i>
+			<div class="description_image_projet">
+				<h6>Item numéro 7</h6>
+				<p>Description</p>
+			</div>
+		</div>
+		<div class="sample_projet creative_projet">
+			<img src="webagency_images/images/portfolio/08.jpg" class="image_projet" alt="image">
+			<i class="fa-solid fa-eye"></i>
+			<div class="description_image_projet">
+				<h6>Item numéro 8</h6>
+				<p>Description</p>
+			</div>
+
+		</div>	
+	</div>
+</section>
+
+<!-- SECTION CONTACT -->
+
+<section id="Contact">
+	<div class="map_responsive">
+		<div id="colormap"></div>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.221609680716!2d2.3476369150047094!3d48.87305177928899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25%20Rue%20d&#39;Hauteville%2C%2075010%20Paris!5e0!3m2!1sfr!2sfr!4v1574512105959!5m2!1sfr!2sfr">
+			
+		</iframe>
+		<form id="formul" method="post" action="#">
+			<h2>Contact Info</h2>
+			<h4>WebAgency SAS</h4> 
+			<p> 25 Rue d'Hauteville 75010 Paris <br> Tel: 01 02 03 04 05</p>
+			<input type="text" name="name" placeholder="Name" class="input90"><br><br>
+			<input type="text" name="subject" placeholder="Subject" class="input90"><br><br>
+			<input type="email" name="email" placeholder="Email" class="input90"><br><br>
+			<textarea name="Message" placeholder="Message" rows="9" class="input90"></textarea>
+		<br>
+			<input type="submit" name="envoyer" value="Send Message" id="boutenv">
+		</form>
+	</div>
+	
+</section>
+</body>
+</html>

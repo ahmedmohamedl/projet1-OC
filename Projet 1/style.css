@@ -1,0 +1,701 @@
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("webagency_images/fonts/Roboto-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Black";
+  src: url("webagency_images/fonts/Roboto-Black.ttf") format("truetype");
+}
+
+/*CSS du body*/
+body {
+  padding: 0;
+  max-width: 1440px;
+  margin: auto;
+  background-color: #f6f6f6;
+  font-family: "Roboto-Regular", Arial;
+}
+
+/*CSS du header*/
+#nav_mobile {
+  display: none;
+}
+#header {
+  /*  Display */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  height: 100px;
+  position: sticky;
+  background-color: white;
+  top: 0;
+  z-index: 4;
+  width: 100%;
+}
+#logo {
+  padding: 17px;
+}
+#desktop_menu_container {
+  display: flex;
+  flex-flow: row wrap;
+  width: 320px;
+  justify-content: space-around;
+  align-items: center;
+}
+.desktop_menu_items {
+  text-decoration: none;
+  width: 80px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+}
+.desktop_menu_items:link,
+.desktop_menu_items:visited {
+  color: black;
+}
+.desktop_menu_items:hover {
+  border-top: 3px solid #64c4cc;
+}
+/*-------------------------------------------------------------------------------------------------------*/
+
+/*CSS du carroussel*/
+#big_slider_container {
+  position: relative;
+}
+#little_slider_container {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  /*    overflow-x: overlay; J'enlève cette ligne car ça me mets une erreur dans le css check mais elle est valide sur chrome et permet d'avoir la scrollbar au dessus de l'image*/
+  z-index: 1;
+  position: relative;
+}
+
+#little_slider_container::-webkit-scrollbar {
+  height: 3px;
+}
+
+#little_slider_container::-webkit-scrollbar-thumb {
+  background: #5cadd3;
+}
+
+#little_slider_container img {
+  min-width: 100%;
+}
+.button {
+  position: absolute;
+  top: 40%;
+  background-color: rgba(0, 0, 0, 35%);
+  width: 36px;
+  height: 70px;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+}
+button .fa-solid {
+  color: white;
+  font-size: 2rem;
+  left: 0;
+}
+
+/*    */
+#buttonl1 {
+  border-radius: 0 100% 100% 0/0 50% 50% 0;
+  left: 0;
+}
+#buttonr1 {
+  right: 0;
+  border-radius: 100% 0 0 100%/50% 0 0 50%;
+}
+#buttonl2 {
+  border-radius: 0 100% 100% 0/0 50% 50% 0;
+  left: 100%;
+}
+#buttonr2 {
+  border-radius: 100% 0 0 100%/50% 0 0 50%;
+  right: -100%;
+}
+
+.texte_slider {
+  z-index: 2;
+  position: absolute;
+  top: 15%;
+  left: 12%;
+  display: initial;
+}
+.texte_slider strong {
+  color: #5cadd3;
+}
+.titre_slider {
+  font-family: "Roboto-Black", "Arial black";
+  font-size: 1.9rem;
+  color: white;
+  margin: 0px;
+}
+.description_slider {
+  font-size: 1rem;
+  color: white;
+  margin: 5px;
+  padding-bottom: 15px;
+}
+.texte_slider button {
+  background: #5cadd3;
+  font: bold 18px Arial;
+  color: white;
+  border-radius: 5px 5px 5px 5px;
+  width: 125px;
+  height: 45px;
+  border: 1px solid rgba(255, 0, 0, 0.3);
+  border-bottom: 3px solid #4494bb;
+}
+.texte_slider button:hover {
+  cursor: pointer;
+  background: #5ca2d1;
+}
+
+/*CSS du texte du carroussel en version mobile*/
+#texte_slider_mobile {
+  text-align: center;
+  font-size: 30px;
+  display: none;
+}
+#texte_slider_mobile strong {
+  color: #5cadd3;
+}
+#texte_slider_mobile button {
+  background: #5cadd3;
+  font: bold 30px Arial;
+  color: white;
+  border-radius: 5px 5px 5px 5px;
+  width: 187.5px;
+  height: 67.5px;
+  border: 1px solid rgba(255, 0, 0, 0.3);
+  border-bottom: 3px solid #4494bb;
+  cursor: pointer;
+}
+#texte_slider_mobile button:hover {
+  background: #5ca2d1;
+}
+
+/*-------------------------------------------------------------------------------------------------------*/
+/*CSS de la section Nos Services*/
+#titre_services {
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: "Roboto-Black";
+  padding-top: 1rem;
+  margin: 0;
+  padding-bottom: 1rem;
+}
+
+.soulignage {
+  text-align: center;
+}
+.container_cercle_soulignage::before,
+.container_cercle_soulignage::after {
+  content: "";
+  display: inline-block;
+  width: 8%;
+  height: 3px;
+  background: lightgrey;
+  vertical-align: middle;
+}
+
+#cercle_soulignage2 {
+  border: 5px solid white;
+  color: #5cadd3;
+  font-size: 14px;
+  border-radius: 50%;
+}
+#sous_titre_services {
+  max-width: 60%;
+  color: #818488;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 3rem;
+  line-height: 1.7;
+}
+.titre_description_service {
+  color: black;
+  font-size: 20px;
+  font-family: "Roboto-Black";
+}
+.texte_description_service1 > p {
+  color: #818488;
+  line-height: 1.7;
+}
+.liste_services {
+  display: flex;
+  flex-direction: row;
+}
+#image_liste_services {
+  margin: auto;
+}
+.colonne {
+  max-width: 50%;
+  margin: auto;
+}
+.liste_services i {
+  color: #5cadd3;
+  padding: 20px;
+  margin-right: 10px;
+  font-size: 25px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+.liste_services li {
+  padding: 1em;
+}
+.liste_services p {
+  padding-left: 3em;
+}
+.fa-arrow-trend-up,
+.fa-cubes,
+.fa-chart-pie,
+li {
+  position: relative;
+}
+#cercle1,
+#cercle2,
+#cercle3 {
+  font-size: 13px;
+  border: none;
+  position: absolute;
+  top: 15%;
+  left: 60%;
+  z-index: 1;
+}
+#ux_design {
+  padding-top: 70px;
+}
+.main_img {
+  height: 319px;
+  width: 510px;
+  max-width: 100%;
+}
+
+/*-------------------------------------------------------------------------------------------------------*/
+#titre_projet {
+  text-align: center;
+  font-family: "Roboto-Black", Arial;
+  font-size: 2.5em;
+  margin-bottom: 0.5rem;
+}
+#presentation_portfolio i {
+  color: rgb(78, 168, 180);
+  font-size: 15px;
+}
+#cercle_soulignage {
+  border: 5px solid white;
+  color: #5cadd3;
+  font-size: 14px;
+  border-radius: 50%;
+}
+#resume_projet {
+  max-width: 50%;
+  text-align: center;
+  color: #818488;
+  margin: auto;
+}
+#menu_projet {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  margin: auto;
+  padding-top: 20px;
+}
+.bouton_menu_projet {
+  display: block;
+  width: 98px;
+  line-height: 43px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 5px;
+  background-color: #c7c5c0;
+  text-decoration: none;
+  color: #6c7074;
+}
+.bouton_menu_projet:hover {
+  background-color: #5cafd4;
+  color: white;
+  border-bottom: 3px solid #448daf;
+}
+.bouton_menu_projet:hover ~ .arrow {
+  visibility: visible;
+}
+
+#nav_mobile1 {
+  width: 100%;
+  display: none;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#nav_mobile1 .fa-solid {
+  color: #5cadd3;
+}
+#menuToggle1 {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding-top: 30px;
+}
+#menuToggle1 input {
+  width: 90px;
+  height: 78px;
+  position: absolute;
+  left: 45%;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+}
+#icon_bars1,
+#icon_cross1 {
+  font-weight: 900;
+  font-size: 90px;
+  left: 45%;
+  position: relative;
+}
+.fa-xmark {
+  visibility: collapse;
+}
+#menuToggle1 a {
+  text-decoration: none;
+  color: #9c9c9c;
+  height: 3rem;
+  display: block;
+  text-align: center;
+}
+#menuToggle1 a:hover {
+  color: #5cadd3;
+}
+#menu_mobile1 {
+  position: absolute;
+  width: 100%;
+  padding: 0;
+  background: whitesmoke;
+  list-style-type: none;
+  transform: translateY(-200%);
+  visibility: collapse;
+}
+#menu_mobile1 li {
+  padding: 10px 0;
+  font-size: 30px;
+}
+#menuToggle1 input:checked ~ ul {
+  transform: none;
+}
+#menuToggle1 input:checked ~ .fa-bars {
+  visibility: collapse;
+  display: none;
+}
+#menuToggle1 input:checked ~ .fa-xmark {
+  visibility: visible;
+}
+#menuToggle1 input:checked ~ #menu_mobile1 {
+  position: relative;
+  visibility: visible;
+}
+#all_works {
+  border-bottom-left-radius: 8%;
+  border-top-left-radius: 8%;
+}
+#portfolio {
+  border-top-right-radius: 7%;
+  border-bottom-right-radius: 7%;
+}
+.link_container {
+  position: relative;
+}
+.arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 15px solid #448daf;
+  bottom: -25%;
+  left: 40%;
+  visibility: hidden;
+}
+
+/*LE PORTFOLIO*/
+#container_des_projets {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding-top: 50px;
+  max-width: 1360px;
+  margin: auto;
+}
+.sample_projet {
+  padding: 10px;
+  position: relative;
+  visibility: visible;
+}
+.image_projet {
+  max-width: 320px;
+  height: 175px;
+}
+.description_image_projet {
+  position: absolute;
+  bottom: 14px;
+  width: calc(100% - 20px);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 1);
+  visibility: hidden;
+  z-index: 1;
+}
+.description_image_projet h6 {
+  font-size: 1.4rem;
+  font-family: "Roboto-Black", Arial;
+  margin: 0;
+  padding: 10px 10px 0;
+}
+.description_image_projet p {
+  margin: 0;
+  padding: 0 0 10px 10px;
+}
+.fa-eye {
+  position: absolute;
+  color: white;
+  font-size: 10px;
+  padding: 10px;
+  background-color: #5cadd3;
+  left: 75%;
+  bottom: 29%;
+  border: 1px solid white;
+  border-radius: 50%;
+  visibility: hidden;
+  z-index: 2;
+}
+.fa-eye:hover {
+  cursor: pointer;
+  background-color: #4198b7;
+  padding: 12px;
+}
+.sample_projet:hover > .description_image_projet {
+  visibility: visible;
+}
+.sample_projet:hover > .fa-eye {
+  visibility: visible;
+}
+
+/*-------------------------------------------------------------------------------------------------------*/
+#Contact {
+  position: relative;
+  height: 600px;
+  width: 100%;
+}
+.map_responsive {
+  visibility: visible;
+}
+#Contact iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 0;
+}
+#colormap {
+  background-color: rgba(78, 177, 213, 0.4);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.map_responsive:hover > #colormap {
+  display: none;
+}
+
+#Contact form {
+  position: absolute;
+  z-index: 3;
+  right: 10%;
+  top: 10%;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 1.3em;
+  text-align: left;
+  width: 25%;
+}
+.input90 {
+  width: 90%;
+  border-radius: 3px;
+  border: 0.4px solid gray;
+  padding: 8px;
+}
+#Contact form h2 {
+  text-align: left;
+  font-family: "Roboto-Black";
+  margin: 0;
+}
+#Contact form h4 {
+  /* text-align: left; */
+  font-size: 1rem;
+  margin: 13px 0 0 0;
+  color: grey;
+}
+#Contact form p {
+  margin: 4px 0px 2px 0px;
+}
+#boutenv {
+  background-color: #5cadd3;
+  color: white;
+  border-radius: 3px;
+  font-size: 1.5vw;
+  text-align: center;
+  margin-top: 22px;
+  padding: 0.6rem;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px #3a84a3 solid;
+}
+
+#boutenv:hover {
+  cursor: pointer;
+}
+#formul2 {
+  width: 100%;
+}
+
+/* LES MEDIA QUERIES */
+@media only screen and (max-width: 375px) {
+    #carroussel {
+        display: none;
+    }
+  }
+@media only screen and (max-width: 768px) {
+  /*CSS du header version mobile*/
+  #header {
+    position: initial;
+    height: auto;
+  }
+  #logo {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  #nav_mobile {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #nav_mobile .fa-solid {
+    color: #5cadd3;
+  }
+  #menuToggle {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+  }
+  #menuToggle input {
+    width: 90px;
+    height: 78px;
+    position: absolute;
+    left: 45%;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+  }
+  #icon_bars,
+  #icon_cross {
+    font-weight: 900;
+    font-size: 90px;
+    left: 45%;
+    position: relative;
+  }
+  .fa-xmark {
+    visibility: collapse;
+  }
+  #menuToggle a {
+    text-decoration: none;
+    color: #9c9c9c;
+    height: 3rem;
+    display: block;
+    text-align: center;
+  }
+  #menuToggle a:hover {
+    color: #5cadd3;
+  }
+  #menu_mobile {
+    position: absolute;
+    width: 100%;
+    padding: 0;
+    background: whitesmoke;
+    list-style-type: none;
+    transform: translateY(-200%);
+    visibility: collapse;
+  }
+  #menu_mobile li {
+    padding: 10px 0;
+    font-size: 30px;
+  }
+  #menuToggle input:checked ~ ul {
+    transform: none;
+  }
+  #menuToggle input:checked ~ .fa-bars {
+    visibility: collapse;
+    display: none;
+  }
+  #menuToggle input:checked ~ .fa-xmark {
+    visibility: visible;
+  }
+  #menuToggle input:checked ~ #menu_mobile {
+    position: relative;
+    visibility: visible;
+  }
+  #desktop_menu_container {
+    display: none;
+  }
+  /*            */
+
+  .button {
+    position: absolute;
+    top: 40%;
+    background-color: rgba(0, 0, 0, 35%);
+    width: 36px;
+    height: 70px;
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+  }
+  button .fa-solid {
+    font-size: 1rem;
+  }
+
+  /*    */
+  .texte_slider {
+    display: none;
+  }
+  /*    */
+  #nav_mobile1 {
+    display: flex;
+  }
+  #menu_projet {
+    display: none;
+  }
+  .container_cercle_soulignage::before,
+  .container_cercle_soulignage::after {
+    width: 25%;
+  }
+  /*   */
+
+  .map_responsive {
+    /*    display: none;*/
+  }
+  #Contact form {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 1);
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .liste_services {
+    flex-direction: column;
+  }
+}
